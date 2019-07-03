@@ -19,3 +19,6 @@ Provide a more efficient way to lay out, align and distribute space among items 
 
 ### Other Notes
 Note that `float`, `clear` and `vertical-align` have no effect on a flex item.
+
+---
+Reference: [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
