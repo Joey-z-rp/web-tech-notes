@@ -22,5 +22,32 @@ For example when you are on the page `http://yourdomain.com` and you use `<img s
 #### `../images/example.png`
 This URL is a relative going up one level from current path.
 
+### Query String
+- key value pairs
+- after `?`
+- multiple query parameters are separated by the ampersand `&`
+- the order of the queries doesn't matter
+- example: `http://example.com/path/to/page?name=ferret&color=purple`
+
+### Hashtag
+- typically used to identify a portion of that document
+- introduced by a hash mark `#`
+- after query string
+- does not refresh the page (no request being sent)
+- targets `id` or `name`(deprecated)
+- example: `http://www.example.org/foo.html#bar`
+
+### Encoding/Decoding
+- URLs can only be sent over the Internet using the ASCII character-set
+- to convert URLs to/from a valid ASCII format
+- replaces unsafe ASCII characters with a `%` followed by two hexadecimal digits
+- replaces a space with a plus (+) sign or with %20
+- uses `encodeURIComponent()` and `decodeURIComponent()`
+- example: `?x=test` will be encoded to `%3Fx%3Dtest`
+
 ---
-Reference: [Absolute vs relative URLs](https://stackoverflow.com/questions/2005079/absolute-vs-relative-urls)
+Reference:
+[Absolute vs relative URLs](https://stackoverflow.com/questions/2005079/absolute-vs-relative-urls)
+[Query string](https://en.wikipedia.org/wiki/Query_string)
+[Fragment identifier](https://en.wikipedia.org/wiki/Fragment_identifier)
+[HTML URL Encoding Reference](https://www.w3schools.com/tags/ref_urlencode.asp)
