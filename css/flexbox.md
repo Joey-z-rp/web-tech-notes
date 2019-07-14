@@ -18,7 +18,8 @@ Provide a more efficient way to lay out, align and distribute space among items 
 - `align-self`: auto | flex-start | flex-end | center | baseline | stretch (override `align-items` for individual flex items)
 
 ### Other Notes
-Note that `float`, `clear` and `vertical-align` have no effect on a flex item.
+- Note that `float`, `clear` and `vertical-align` have no effect on a flex item.
+- If `flex-basis` is not set, it falls back to `width`. If `width` is not set as well, it's determined by the width of the content
 
 ---
 Reference: [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
