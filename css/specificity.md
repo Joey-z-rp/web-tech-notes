@@ -6,7 +6,9 @@
 - Level 4: `Inline styles` always overwrite any styles in external stylesheets
 - Level 5 : `!important`
 
-### !important
+### `!important`
+- When an important rule is used on a style declaration, this declaration overrides any other declarations.
+- When two conflicting declarations with the !important rule are applied to the same element, the declaration with a greater specificity will be applied.
 
 ---
 Reference: [Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
