@@ -20,6 +20,7 @@ Provide a more efficient way to lay out, align and distribute space among items 
 ### Other Notes
 - Note that `float`, `clear` and `vertical-align` have no effect on a flex item.
 - If `flex-basis` is not set, it falls back to `width`. If `width` is not set as well, it's determined by the width of the content
+- The child elements of a flex item would affect the width of the flex item, e.g not be able to shrink.
 
 ---
 Reference: [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
